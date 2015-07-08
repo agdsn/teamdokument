@@ -1,4 +1,23 @@
-\input{preamble}
+\documentclass[draft,parskip=half-,DIV=12,mpinclude]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\useshorthands{'}
+\defineshorthand{'S}{\Sentence\ignorespaces}
+\defineshorthand{'.}{. \Sentence\ignorespaces}
+\usepackage{tgheros}
+\usepackage{tgpagella}
+\usepackage{tgcursor}
+\usepackage{datetime}
+\usepackage{changes}
+\usepackage{scrjura}
+
+\AfterCalculatingTypearea{%
+  \addtolength{\marginparwidth}{\marginparwidth}%
+}
+\recalctypearea
+\setremarkmarkup{\marginpar{\scriptsize#1:\\#2}}
+
 \begin{document}
 
 \title{Grundsatzbeschluss mit Referenzcharakter zum Einsatz von Teams in der AG DSN}
@@ -8,7 +27,7 @@
 
 \begin{contract}
 
-\Paragraph{title=Anwendungsbereich}
+\Clause{title=Anwendungsbereich}
 
 Dieser Beschluss schafft die Möglichkeit, Teams als Organe der Arbeitsgemeinschaft Dresdner Studentennetz (nachfolgend AG DSN) einzusetzen.
 
@@ -24,7 +43,7 @@ Es gelten die Regelungen der folgenden Ordnungen und Dokumente:
 
 Auf Grundlage dieses Beschlusses können Entscheidungen innerhalb der AG DSN nach Themen aufgeteilt werden und an Teams delegiert werden.
 
-\Paragraph{title=Zuständigkeitsbereich}
+\Clause{title=Zuständigkeitsbereich}
 
 Alle Teams der AG DSN sind Organe der AG DSN. Die AG DSN ist eine Arbeitsgemeinschaft des Studentenrates der Technischen Universität Dresden.
 
@@ -37,7 +56,8 @@ Geographische Komponente (betroffende Gebäude) sind
 \end{enumerate}
 
 Die thematische Einschränkung eines Teams erfolgt über einen gesonderten Beschluss, welcher in §3 erläutert wird.
-\Paragraph{title=Einrichtung und Auflösung}
+
+\Clause{title=Einrichtung und Auflösung}
 
 Die Vollersammlung der AG DSN ist mit absoluter Mehrheit in der Lage einen Beschluss zu fassen, welcher Teams einrichtet oder auflöst.
 
@@ -51,7 +71,7 @@ Die initialen Teammitglieder werden im Beschluss aufgelistet.
 
 Ein Team muss über mindestens drei Mitglieder verfügen.
 
-\Paragraph{title=Mitgliedschaft}
+\Clause{title=Mitgliedschaft}
 
 Ein Team kann durch einfachen Beschluss Personen, welche bereits Mitglieder der AG DSN sind, aufnehmen. Die Mitgliedschaft in der AG DSN ist durch die Satzung der AG DSN geregelt.
 
@@ -61,7 +81,7 @@ Ein Mitglied kann durch einen qualifizierten Beschluss durch ein Team aus diesem
 
 Eine Aufnahme oder ein Austritt aus einem Team der AG DSN berührt nicht die Mitgliedschaft in der AG DSN.
 
-\Paragraph{title=Teamsitzung}
+\Clause{title=Teamsitzung}
 
 Jedes Team hält Teamsitzungen ab. Diese bestehen aus allen Mitgliedern des Teams. Diese sind stimmberechtigt.
 
@@ -79,7 +99,7 @@ Eine Teamsitzung fasst einen
   \item absoluten Beschluss durch Zustimmung der Hälfte oder
   \item qualifizierten Beschluss durch Zustimmung von Zweidrittel
 \end{enumerate}
-der abgegeben Stimmen`. Sofern nicht anders geregelt, ist ein einfacher Beschluss ausreichend.
+der abgegeben Stimmen'. Sofern nicht anders geregelt, ist ein einfacher Beschluss ausreichend.
 
 Für folgende Beschlüsse ist eine Ankündigung von einer Woche vor der jeweiligen Teamsitzung nötig:
 \begin{enumerate}
@@ -88,7 +108,7 @@ Für folgende Beschlüsse ist eine Ankündigung von einer Woche vor der jeweilig
   \item Wahl des Teamsprechers und seines Stellvertreters
 \end{enumerate}
 
-\Paragraph{title=Teamsprecher}
+\Clause{title=Teamsprecher}
 
 Jedes Team wählt einen Teamsprecher und einen stellvertretenden Teamsprecher, um die Kommunikation innerhalb der AG DSN sicher zu stellen.
 
@@ -102,13 +122,13 @@ Der Teamsprecher erfüllt folgende Aufgaben:
 
 Weitere Befugnisse des Teamsprechers können durch Beschluss der Teamsitzung gewährt werden.
 
-Der Teamsprecher und sein Stellvertreter müssen einmal im Jahr durch absoluten Beschluss gewählt werden`. Falls im ersten Wahlgang keine absolute Mehrheit erreicht werden konnte, wird eine Stichwahl zwischen den beiden Kandidaten mit den meisten Stimmen durchgeführt.
+Der Teamsprecher und sein Stellvertreter müssen einmal im Jahr durch absoluten Beschluss gewählt werden'. Falls im ersten Wahlgang keine absolute Mehrheit erreicht werden konnte, wird eine Stichwahl zwischen den beiden Kandidaten mit den meisten Stimmen durchgeführt.
 
 Zur Berichterstattung an den Vorstand nimmt jeder Teamsprecher an den Vorstandssitzungen der AG DSN teil.
 
 Die Aufgaben des Teamsprechers werden in seiner Abwesenheit vom stellvertretenden Teamsprecher übernommen.
 
-\Paragraph{title=Finanzierung von Teams}
+\Clause{title=Finanzierung von Teams}
 
 Teams können Budgets zur Finanzierung von Projekten in der Vollversammlung der AG DSN beantragen.
 
@@ -126,11 +146,12 @@ Die Überweisungen der Teams werden vom Konto des Vorstandes der AG DSN bezahlt.
 
 Eine Übersicht laufender und geplanter Budgets wird vom Schatzmeister der AG DSN erstellt und laufend aktuell gehalten. Diese Übersicht steht allen aktiven und beratenden Mitgliedern der AG DSN ständig zur Verfügung.
 
-\Paragraph{title=Salvatorische Klausel}
-Sollten einzelne Bestimmungen dieser Formulierungen unwirksam sein oder nach deren Beschluss unwirksam werden, so ist dadurch die Wirksamkeit der anderen Formulierungen nicht berührt`. An die Stelle dieser unwirksamen Formulierungen treten diejenigen Gesetze und Regelungen, welche der ursprünglichen Intention am meisten entsprechen.
+\Clause{title=Salvatorische Klausel}
+Sollten einzelne Bestimmungen dieser Formulierungen unwirksam sein oder nach deren Beschluss unwirksam werden, so ist dadurch die Wirksamkeit der anderen Formulierungen nicht berührt'. An die Stelle dieser unwirksamen Formulierungen treten diejenigen Gesetze und Regelungen, welche der ursprünglichen Intention am meisten entsprechen.
 
-\Paragraph{title=Inkrafttreten}
+\Clause{title=Inkrafttreten}
 Dieser Grundsatzbeschluss tritt am \formatdate{1}{8}{2015} in Kraft.
+
 \end{contract}
 \end{document}
 
